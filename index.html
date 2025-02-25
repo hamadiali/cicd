@@ -1,11 +1,15 @@
-MA ligne
-Bien
-Autre
-SLAM
-<br>
-<br>
-QS
-QPO
-<h2>Autre index</h2>
-<h2>Autre index</h2>
-<h2>Autre index</h2>
+// Définir le fuseau horaire au début
+date_default_timezone_set('Europe/Paris');
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+// Charger les fichiers nécessaires
+require_once 'configs/chemins.class.php';
+require_once 'application/controleurs/ControleurPrestation.class.php';
+require_once 'application/controleurs/ControleurLocation.class.php';
+require_once 'application/controleurs/ControleurAbout.class.php';
+require_once 'application/controleurs/ControleurContact.class.php';
+require_once 'application/controleurs/ControleurAccueil.class.php';
+require_once Chemins::CONFIGS . 'mysql_config.class.php';
+require_once Chemins::CONFIGS . 'variables_globales.class.php';
